@@ -32,6 +32,7 @@ Nothing
 Modified by: Trevor Blanchard  
 Original file location: https://github.com/coding-boot-camp/miniature-eureka  
 The link to the repo for this project is located at: https://github.com/blanchardt/trevors-note-taker  
+Live Site: https://trevors-note-taker-34d504abc814.herokuapp.com/  
 
 ### notes.js  
 
