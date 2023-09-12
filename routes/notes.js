@@ -29,12 +29,16 @@ notes.post('/', (req, res) => {
 });
 
 //Went to https://stackoverflow.com/questions/61526572/express-js-delete-request to learn about delete requests.  Also credited in the README file.
+/*Christoffer Hennie, Davit, &amp; Syscall. (2020, April 30). Express.js delete request. Stack Overflow. 
+    https://stackoverflow.com/questions/61526572/express-js-delete-request */
 notes.delete('/:id', (req, res) => {
   //get the data from the text file
   readFromFile('./db/db.json').then((data) => {
     var allData = JSON.parse(data);
     //went to https://itsjavascript.com/get-the-index-of-an-object-in-an-array-in-javascript#:~:text=We%20can%20find%20the%20index,an%20object%20in%20an%20array.
     //to figure out how to get a specific index of an object in an array.  Also credited in the README file.
+    /*Srinivas, A. (2022, April 5). Get the index of an object in an array in JavaScript. ItsJavaScript. 
+        https://itsjavascript.com/get-the-index-of-an-object-in-an-array-in-javascript#:~:text=We%20can%20find%20the%20index,an%20object%20in%20an%20array. */
     //check to see if the id in the url is in the array.
     var deletingItemLocation = allData.findIndex((note) => note.id == req.params.id);
     
